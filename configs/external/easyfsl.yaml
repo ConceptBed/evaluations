@@ -1,0 +1,4 @@
+_target_: src.external.utils.import_git_module
+name: easy-few-shot-learning
+git_url: https://github.com/sicara/easy-few-shot-learning.git
+patch: /data/data/matt/learning-to-learn-concepts/evaluations/patches/easyfsl/05042023.patch

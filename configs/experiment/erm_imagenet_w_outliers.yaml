@@ -1,0 +1,31 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: imagenet_w_outliers.yaml
+  - override /model: imagenet_w_outliers.yaml
+  - override /logger: wandb.yaml
+  - override /callbacks: custom
+  - override /trainer: ddp
+
+
+# name of the run determines folder name in logs
+name: "outliers_imagenet"
+eval_type: best
+num_cls: 80
+
+seed: 0
+
+datamodule:
+  batch_size: 64
+
+trainer:
+  gpus: [0]
+  max_epochs: 100
+  gradient_clip_val: 0.0
+
+callbacks:
+  early_stopping:
+    patience: 100

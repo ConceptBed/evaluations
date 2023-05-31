@@ -1,0 +1,2 @@
+_target_: src.models.clip.CLIPModule
+device: cuda

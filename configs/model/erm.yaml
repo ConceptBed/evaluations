@@ -1,0 +1,7 @@
+_target_: src.models.erm.ERMModule
+model_name: resnet18
+lr: 0.004
+momentum: 0.9
+weight_decay: 0.0001
+num_cls: ${num_cls}
+pretrained: True

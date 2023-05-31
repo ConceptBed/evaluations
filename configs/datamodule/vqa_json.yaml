@@ -1,0 +1,8 @@
+_target_: src.datamodules.vqa_json_datamodule.VQADataModule
+
+data_dir: "/data/data/matt/learning-to-learn-concepts/outputs/composition/CUBs/bird"
+json_dir: ${data_dir}/compositions/compositions_v1_0/proposed/
+categories: ["attribute", "relation", "counting", "action"]
+batch_size: 1
+num_workers: 0
+pin_memory: false

@@ -1,0 +1,18 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: vqa_json.yaml
+  - override /model: vqa.yaml
+  - override /logger: wandb.yaml
+  - override /callbacks: custom
+
+# name of the run determines folder name in logs
+name: "vqa_json"
+
+datamodule:
+  batch_size: 1
+  data_dir: "./unet_without_emb_without_multires"
+  categories: ["attribute", "relation", "counting", "action"]

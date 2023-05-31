@@ -1,0 +1,6 @@
+_target_: src.datamodules.imgtxt_datamodule.IMGTXTDataModule
+
+data_dir: "/data/data/matt/learning-to-learn-concepts/outputs/composition/CUBs/bird"
+batch_size: 1
+num_workers: 0
+pin_memory: false

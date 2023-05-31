@@ -1,0 +1,10 @@
+defaults:
+  - default.yaml
+  - wandb.yaml
+
+entropy_log:
+  _target_: src.callbacks.custom_evals.MeanStdEntropy
+
+save_log:
+  _target_: src.callbacks.custom_evals.SaveLogits
+  save_dir: ${hydra:runtime.output_dir}

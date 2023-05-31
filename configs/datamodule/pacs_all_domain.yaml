@@ -1,0 +1,11 @@
+_target_: src.datamodules.pacs_all_domain_datamodule.PACsDataModule
+
+data_dir: ${data_dir}/PACs # data_dir is specified in config.yaml
+test_data_dir: ${data_dir}/PACs # data_dir is specified in config.yaml
+batch_size: 32
+train_val_split: [0.8, 0.2]
+num_workers: 2
+pin_memory: False
+num_cls: ${num_cls}
+domain: 'sketch'
+test: false

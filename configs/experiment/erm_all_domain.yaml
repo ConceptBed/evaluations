@@ -1,0 +1,31 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: pacs_all_domain.yaml
+  - override /model: erm.yaml
+  - override /logger: wandb.yaml
+  - override /callbacks: custom
+
+
+# name of the run determines folder name in logs
+name: "all_domain"
+eval_type: last
+num_cls: 4
+
+seed: 0
+
+datamodule:
+  batch_size: 32
+  domain: "sketch"
+
+trainer:
+  gpus: [0]
+  max_steps: 2000
+  gradient_clip_val: 0.0
+
+callbacks:
+  early_stopping:
+    patience: 100
