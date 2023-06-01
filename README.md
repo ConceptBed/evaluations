@@ -18,11 +18,6 @@ This repository is the part of the "ConceptBed: Evaluating Concept Learning Abil
 This project provides the evaluation framework for the Personalized Text-to-Image Generative models (also known as Concept Leanrers).
 
 
-## Overview
-
-
-
-
 ## Getting Started
 
 Install dependencies
