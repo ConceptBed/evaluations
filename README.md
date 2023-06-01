@@ -2,14 +2,10 @@
 
 # ConceptBed: Evaluations
 
-<!-- [![Project](http://img.shields.io/badge/paper-arxiv.1001.2234-B31B1B.svg)](#)
-[![Paper](http://img.shields.io/badge/paper-arxiv.1001.2234-B31B1B.svg)](#)
-[![Data](http://img.shields.io/badge/paper-arxiv.1001.2234-B31B1B.svg)](#)
-[![Results Explorer](http://img.shields.io/badge/paper-arxiv.1001.2234-B31B1B.svg)](#) -->
-[\[Project\]](#)
+[\[Project\]](https://conceptbed.github.io/)
 [\[Paper\]](#)
-[\[Data\]](#)
-[\[Results Explorer\]](#)
+[\[Data\]](https://conceptbed.github.io/data.html)
+[\[Results Explorer\]](https://conceptbed.github.io/explorer.html)
 
 
 
@@ -27,7 +23,7 @@ This project provides the evaluation framework for the Personalized Text-to-Imag
 
 
 
-## To perform ConceptBed evaluations:
+## Getting Started
 
 Install dependencies
 
@@ -137,6 +133,9 @@ Additional instructions:
 
 
 ## Citation
+
+If you our work helpful, please consider citing:
+
 ```
 @article{patel2023conceptbed,
   author    = {Patel, Maitreya and Gokhale, Tejas and Baral, Chitta and Yang, Yezhou},
@@ -148,3 +147,7 @@ Additional instructions:
 
 ## Acknowledgement
 We would like to acknowledge the [PyTorch](https://pytorch.org), [timm](https://github.com/huggingface/pytorch-image-models), [transformers](https://github.com/huggingface/transformers), and [lightning+hydra](https://github.com/ashleve/lightning-hydra-template).
+
+This work was supported by NSF RI grants #1750082 and #2132724, and a grant from Meta AI Learning Alliance. The views and opinions of the authors expressed herein do not necessarily state or reflect those of the funding agencies and employers.
+
+If you have any questions or suggestions, please feel free to reach out to us.
